@@ -35,8 +35,8 @@ class RegisterActivity : AppCompatActivity() {
                 val phone = etPhone.text.toString()
                 val password = etPassword.text.toString()
 
-                if (username.equals("") || email.equals("") || phone.equals("") || password.equals("")){
-                    Toast.makeText(applicationContext, "Cant Empty!", Toast.LENGTH_SHORT)
+                if (username == "" || email == "" || phone == "" || password == ""){
+                    Toast.makeText(applicationContext, "Cant Empty!", Toast.LENGTH_SHORT).show()
                 }else  {
                     intent.putExtra(it_USERNAME, username)
                     intent.putExtra(it_EMAIL, email)
